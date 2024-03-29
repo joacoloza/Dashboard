@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300; /* Light */
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('ruta/a/Roboto-LightItalic.woff') format('woff');
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    overflow: hidden;
+    height: 100%;
+/*width & overflow to make it adaptable*/
+}
+
+/*left side*/
+.leftSide{
+    background-color: #4f46e5;
+    width: 15%;
+    height: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.leftNavBar{
+    display: grid;
+    grid-row: 10px 10px 10px 10px;
+}
+
+.leftItem{
+    align-items: center;
+}
+
+.leftItem  :hover{
+    color: #2e1065;
+}
+
+.leftNavBar div {
+    color: white;
+    margin: 5px;
+}
+
+.leftNavBar a{
+    margin-left: 5px;
+}
+
+
+.leftSideLogo {
+    height: 40px;
+    width: 40px;
+    filter: invert(100%) grayscale(100%);
+}
+
+.leftSideSvg{
+    height: 25px;
+    width: 25px;
+    filter: invert(100%) grayscale(100%);
+}
+
+
+/*rigth side*/
+.rigthSide{
+    background-color:#eef2ff;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*nav bar section*/
+.navBar{
+    height: 20%;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.imgSvg{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.searchBar {
+    border-radius: 8px;
+    border:none;
+    background-color: #d4d4d8;
+    width: 50%;
+    padding: 5px;
+    height: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+.belowNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.belowNavBar >div {
+    margin-left: 20px;
+}
+
+.buttons button {
+    background-color: #4f46e5;
+    color: #fff;
+    font-weight: 600;
+    width: 96px;
+    height: 36px;
+    border-radius: 36px;
+    border: none;
+}
+
+.buttons button :hover {
+    background-color: #2e1065;
+}
+
+
+/*page content section*/
+.content{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: #d1d5db;
+}
+
+/*project section*/
+.projects{
+    width: 70%;
+    margin: 5px;
+}
+
+.projectsGrid{
+    height: 90%;
+    display: grid;
+    resize: both;
+    overflow: auto;
+    grid-template-columns: 300px 300px  ;
+    grid-gap: 20px;
+    grid-row: 400px 400px 400px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+
+.item {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.item:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+.item div h2 {
+    margin-left: 5px;
+}
+
+
+.item div p {
+    margin: 5px;
+    padding: 10px;
+}
+
+.item > div {
+    border-left: .5rem solid #4f46e5;
+}
+
+.itemIcons img{
+    margin-left: 200px;
+    height: 35px;
+    width: 35px;
+}
+
+/*announcements section*/
+.profile{
+    width: 30%;
+    margin: 5px;
+}
+.profileGrid{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.profileGrid div {
+    height: auto;
+    width: 190px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-left: .5rem solid #4f46e5;
+    border-radius: 5px;
+    justify-content: center;
+}
